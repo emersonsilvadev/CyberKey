@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas - CyberKey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CyberKey</h1>
+        <h3>Gerador de Senhas Seguras</h3> 
+
+        <div class="options">
+            <label><input type="checkbox" id="numbers"> Números</label>
+            <label><input type="checkbox" id="symbols"> Símbolos</label>
+            <label><input type="checkbox" id="uppercase"> Letras Maiúsculas</label>
+        </div>
+
+        <button onclick="generatePassword()">Gerar Senha</button>
+
+        <div class="password-box">
+            <input type="text" id="password" readonly>
+            <p id="success-message" style="display: none;">Senha gerada com sucesso!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
